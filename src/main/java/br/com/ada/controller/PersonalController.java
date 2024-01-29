@@ -1,16 +1,16 @@
 package br.com.ada.controller;
 
 import br.com.ada.domain.BaseTask;
+import br.com.ada.domain.PersonalTask;
 import br.com.ada.service.TasksService;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class TasksController {
+public class PersonalController {
+    private TasksService<PersonalTask<String>> service;
 
-    private TasksService<BaseTask> service;
-
-    public TasksController(TasksService<BaseTask> service) {
+    public PersonalController(TasksService<PersonalTask<String>> service) {
         this.service = service;
     }
 
@@ -50,25 +50,26 @@ public class TasksController {
     private void createTask(Scanner scanner) {
         scanner = new Scanner(System.in);
         System.out.println("Digite o título da tarefa:");
-        String title = scanner.next();
+        String title = scanner.nextLine();
 
         System.out.println("Digite a descrição da tarefa:");
-        String description = scanner.next();
+        String description = scanner.nextLine();
 
         System.out.println("Digite a data final da tarefa:");
-        String deadline = scanner.next();
-        scanner.nextLine();
+        String deadline = scanner.nextLine();
 
         System.out.println("Digite o Id da tarefa:");
         Long id = scanner.nextLong();
 
-        BaseTask task = new BaseTask(title, description, deadline, id);
+        System.out.println("Digite a prioridade da tarefa:");
+        String priority = scanner.next();
+
+        PersonalTask<String> task = new PersonalTask<>(title, description, deadline, id, priority);
 
         service.createTask(task);
 
         System.out.println("Tarefa criada com sucesso!");
     }
-
     private void editTask(Scanner scanner) {
         System.out.println("Digite o ID da tarefa que deseja editar:");
         Long id = null;
@@ -80,7 +81,7 @@ public class TasksController {
                 scanner.nextLine();
             }
         }
-        BaseTask task = service.findById(id);
+        PersonalTask task = service.findById(id);
 
         if (task == null) {
             System.out.println("Tarefa não encontrada!");
@@ -89,6 +90,7 @@ public class TasksController {
 
         System.out.println("Digite o novo título da tarefa:");
         task.setTitle(scanner.next());
+        scanner.nextLine();
 
         System.out.println("Digite a nova descrição da tarefa:");
         task.setDescription(scanner.next());
@@ -96,6 +98,7 @@ public class TasksController {
 
         System.out.println("Digite a nova data de vencimento da tarefa:");
         task.setDeadline(scanner.next());
+        scanner.nextLine();
 
         service.editTask(task);
 
@@ -110,7 +113,7 @@ public class TasksController {
             try {
                 Long id = Long.parseLong(input.trim());
 
-                BaseTask task = service.findById(id);
+                PersonalTask task = service.findById(id);
 
                 if (task == null) {
                     System.out.println("Tarefa não encontrada!");
@@ -126,16 +129,17 @@ public class TasksController {
     }
 
     private void listTasks() {
-        List<BaseTask> tasks = service.listTasks();
+        List<PersonalTask<String>> tasks = service.listTasks();
 
         if(tasks.isEmpty()){
             System.out.println("Lista vazia, não há tarefas para serem listadas.");
             System.out.println("____________________________________");
         }
 
-        for (BaseTask task : tasks) {
+        for (PersonalTask task : tasks) {
             System.out.println(task);
             System.out.println("____________________________________");
         }
     }
+
 }

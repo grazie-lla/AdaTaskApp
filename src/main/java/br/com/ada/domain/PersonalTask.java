@@ -3,18 +3,19 @@ package br.com.ada.domain;
 import javax.swing.*;
 
 public class PersonalTask<T> extends BaseTask<T> {
+    private String priority;
 
-    public PersonalTask(String title, String description, String deadline, Long id) {
+    public PersonalTask(String title, String description, String deadline, Long id, String priority) {
         super(title, description, deadline, id);
+        this.priority = priority;
     }
 
     @Override
     public String toString() {
-        return "PersonalTask{" +
-                "title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", deadline='" + deadline + '\'' +
-                ", id=" + id +
-                '}';
+        return "Título: " + title +
+                "\nDescrição: " + description +
+                "\nData de vencimento: " + deadline +
+                "\nID: " + id +
+                "\nPrioridade:"+ priority;
     }
 }
