@@ -5,8 +5,8 @@ import javax.swing.*;
 public class PersonalTask<T> extends BaseTask<T> {
     private String priority;
 
-    public PersonalTask(String title, String description, String deadline, Long id, String priority) {
-        super(title, description, deadline, id);
+    public PersonalTask(String title, String description, String deadline, String priority) {
+        super(title, description, deadline);
         this.priority = priority;
     }
 
@@ -22,7 +22,7 @@ public class PersonalTask<T> extends BaseTask<T> {
     public String toString() {
         return "Título: " + title +
                 "\nDescrição: " + description +
-                "\nData de vencimento: " + deadline +
+                "\nPrazo máximo: " + deadline +
                 "\nID: " + id +
                 "\nPrioridade:"+ priority;
     }

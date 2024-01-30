@@ -6,11 +6,10 @@ public class BaseTask<T> {
     protected String deadline;
     protected Long id;
 
-    public BaseTask(String title, String description, String deadline, Long id) {
+    public BaseTask(String title, String description, String deadline) {
         this.title = title;
         this.description = description;
         this.deadline = deadline;
-        this.id = id;
     }
 
     public Long getId() {
@@ -49,7 +48,7 @@ public class BaseTask<T> {
     public String toString() {
         return "Título: " + title +
                 "\nDescrição: " + description +
-                "\nData de vencimento: " + deadline +
+                "\nPrazo máximo: " + deadline +
                 "\nID: " + id;
     }
 }

@@ -1,8 +1,8 @@
 package br.com.ada.domain;
 
 public class WorkTask<T> extends BaseTask<T> {
-    public WorkTask(String title, String description, String deadline, Long id) {
-        super(title, description, deadline, id);
+    public WorkTask(String title, String description, String deadline) {
+        super(title, description, deadline);
     }
 
     @Override

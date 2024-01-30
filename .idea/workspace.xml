@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbf6c7f6-dddf-40e1-8b71-d01fad7a7673" name="Changes" comment="adding controller">
+    <list default="true" id="bbf6c7f6-dddf-40e1-8b71-d01fad7a7673" name="Changes" comment="modified controller">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/PersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/PersonalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/TasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/TasksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/BaseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/BaseTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/PersonalTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/PersonalTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/StudyTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/StudyTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/WorkTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/domain/WorkTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705964535611</updated>
-      <workItem from="1705964538620" duration="16642000" />
+      <workItem from="1705964538620" duration="17999000" />
     </task>
     <task id="LOCAL-00001" summary="adding domain package">
       <option name="closed" value="true" />
@@ -125,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706572663030</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modified controller">
+      <option name="closed" value="true" />
+      <created>1706573358248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706573358248</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +149,7 @@
     <MESSAGE value="adding repository" />
     <MESSAGE value="adding service" />
     <MESSAGE value="adding controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding controller" />
+    <MESSAGE value="modified controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified controller" />
   </component>
 </project>
