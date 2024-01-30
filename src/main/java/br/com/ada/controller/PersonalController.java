@@ -58,17 +58,18 @@ public class PersonalController {
         System.out.println("Digite a data final da tarefa:");
         String deadline = scanner.nextLine();
 
-        System.out.println("Digite o Id da tarefa:");
-        Long id = scanner.nextLong();
-
         System.out.println("Digite a prioridade da tarefa:");
         String priority = scanner.next();
 
-        PersonalTask<String> task = new PersonalTask<>(title, description, deadline, id, priority);
+        PersonalTask<String> task = new PersonalTask<>(title, description, deadline, priority);
 
         service.createTask(task);
 
-        System.out.println("Tarefa criada com sucesso!");
+        System.out.printf("***************************" +
+                "%nTarefa criada com sucesso!" +
+                "%n***************************%n");
+        System.out.println(task);
+        System.out.println("____________________________________");
     }
     private void editTask(Scanner scanner) {
         scanner = new Scanner(System.in);

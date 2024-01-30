@@ -59,14 +59,15 @@ public class TasksController {
         String deadline = scanner.next();
         scanner.nextLine();
 
-        System.out.println("Digite o Id da tarefa:");
-        Long id = scanner.nextLong();
-
-        BaseTask task = new BaseTask(title, description, deadline, id);
+        BaseTask task = new BaseTask(title, description, deadline);
 
         service.createTask(task);
 
-        System.out.println("Tarefa criada com sucesso!");
+        System.out.printf("***************************" +
+                "%nTarefa criada com sucesso!" +
+                "%n***************************%n");
+        System.out.println(task);
+        System.out.println("____________________________________");
     }
 
     private void editTask(Scanner scanner) {
