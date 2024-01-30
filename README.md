@@ -1,6 +1,6 @@
 # Projeto de Gerenciamento de Tarefas
 
-Este projeto é uma aplicação simples de gerenciamento de tarefas desenvolvida em Java. A estrutura do projeto está organizada em diferentes pacotes para facilitar a manutenção e expansão.
+Este projeto é uma aplicação simples de gerenciamento de tarefas desenvolvida em Java, onde o usuário interage através do console. A estrutura do projeto está organizada em diferentes pacotes para facilitar a manutenção e expansão, respeitando os princípios do SOLID.
 
 ## Estrutura do Projeto
 
