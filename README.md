@@ -43,6 +43,60 @@ Este projeto é uma aplicação simples de gerenciamento de tarefas desenvolvida
 - **Excluir Tarefa:** Permite excluir uma tarefa informando seu ID.
 - **Listar Tarefas:** Exibe a lista de todas as tarefas cadastradas de acordo com a classificação da tarefa.
 
+## Fluxo
+## Início
+- O programa é iniciado.
+- Exibe o menu principal.
+
+### Escolher Tipo de Tarefa:
+- Usuário escolhe entre Tarefas Gerais, Pessoais, de Estudo ou de Trabalho.
+- O programa redireciona para o controlador correspondente com base na escolha.
+
+## Operações do Controlador
+
+### TasksController:
+- Exibe opções para Criar, Editar, Excluir ou Listar Tarefas Gerais.
+- Realiza operações conforme escolha do usuário.
+- Retorna ao menu principal após conclusão.
+
+### PersonalController, StudyController, WorkController:
+- Realiza operações específicas do tipo de tarefa escolhido.
+- Retorna ao menu principal após conclusão.
+
+## Operações Específicas de Tarefa
+
+### Criar Tarefa:
+- Solicita informações necessárias de acordo com o tipo de tarefa.
+- Cria uma instância da tarefa correspondente.
+- Adiciona a tarefa ao repositório.
+- Exibe a tarefa adicionada e mensagem de sucesso.
+
+### Editar Tarefa:
+- Solicita o ID da tarefa a ser editada.
+- Exibe solicita novos dados.
+- Atualiza a tarefa no repositório.
+- Exibe mensagem de sucesso.
+
+### Excluir Tarefa:
+- Solicita o ID da tarefa a ser excluída.
+- Remove a tarefa do repositório.
+- Exibe mensagem de sucesso.
+
+### Listar Tarefas:
+- Verifica se a lista está vazia.
+- Obtém a lista de tarefas do repositório.
+- Exibe as informações de cada tarefa.
+
+### Retornar ao Menu principal:
+- Usuário escolhe retornar ao menu principal e pode escolher outros tipos de tarefas.
+
+### Sair
+- Usuário escolhe Sair.
+- Encerra o programa.
+
+## Fim
+- O programa é encerrado.
+
 ## Autor
 
 Graziella Guedes
