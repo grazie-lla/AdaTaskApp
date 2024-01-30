@@ -1,6 +1,5 @@
 package br.com.ada.controller;
 
-import br.com.ada.domain.BaseTask;
 import br.com.ada.domain.PersonalTask;
 import br.com.ada.service.TasksService;
 
