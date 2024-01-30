@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbf6c7f6-dddf-40e1-8b71-d01fad7a7673" name="Changes" comment="adding implementation to the WorkController.java">
+    <list default="true" id="bbf6c7f6-dddf-40e1-8b71-d01fad7a7673" name="Changes" comment="refactored main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/PersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/PersonalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/StudyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/StudyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/TasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/TasksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ada/controller/WorkController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705964535611</updated>
-      <workItem from="1705964538620" duration="22426000" />
+      <workItem from="1705964538620" duration="23163000" />
     </task>
     <task id="LOCAL-00001" summary="adding domain package">
       <option name="closed" value="true" />
@@ -211,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706577993876</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactored main">
+      <option name="closed" value="true" />
+      <created>1706580022434</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706580022434</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +244,7 @@
     <MESSAGE value="removed unused import" />
     <MESSAGE value="adding WorkController.java" />
     <MESSAGE value="adding implementation to the WorkController.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding implementation to the WorkController.java" />
+    <MESSAGE value="refactored main" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored main" />
   </component>
 </project>

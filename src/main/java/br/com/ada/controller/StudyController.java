@@ -22,7 +22,8 @@ public class StudyController {
                     "%n2. Editar tarefa; " +
                     "%n3. Excluir tarefa; " +
                     "%n4. Listar tarefas; " +
-                    "%n5. Sair.%n");
+                    "%n5. Voltar para o menu principal;" +
+                    "%n6. Encerrar programa.%n");
 
             int option = scanner.nextInt();
 
@@ -41,6 +42,9 @@ public class StudyController {
                     break;
                 case 5:
                     return;
+                case 6:
+                    System.out.println("Encerrando o programa!");
+                    System.exit(0);
                 default:
                     System.out.println("Opção inválida!");
             }
