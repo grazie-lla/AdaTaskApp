@@ -18,30 +18,32 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("Escolha o tipo de tarefa: " +
-                "%n1. Tarefas Gerais; " +
-                "%n2. Tarefas Pessoais; " +
-                "%n3. Tarefas de Estudo; " +
-                "%n4. Tarefas de Trabalho;" +
-                "%nInsira o número correspondente à opção escolhida:%n");
+        while (true) {
+            System.out.printf("Escolha o tipo de tarefa: " +
+                    "%n1. Tarefas Gerais; " +
+                    "%n2. Tarefas Pessoais; " +
+                    "%n3. Tarefas de Estudo; " +
+                    "%n4. Tarefas de Trabalho;" +
+                    "%nInsira o número correspondente à opção escolhida:%n");
 
-        int choice = scanner.nextInt();
+            int choice = scanner.nextInt();
 
-        switch (choice){
-            case 1:
-                runBaseTasks();
-                break;
-            case 2:
-                runPersonalTasks();
-                break;
-            case 3:
-                runStudyTasks();
-                break;
-            case 4:
-                runWorkTasks();
-                break;
-            default:
-                System.out.println("Escolha inválida!");
+            switch (choice) {
+                case 1:
+                    runBaseTasks();
+                    break;
+                case 2:
+                    runPersonalTasks();
+                    break;
+                case 3:
+                    runStudyTasks();
+                    break;
+                case 4:
+                    runWorkTasks();
+                    break;
+                default:
+                    System.out.println("Escolha inválida!");
+            }
         }
     }
     private static void runBaseTasks(){
