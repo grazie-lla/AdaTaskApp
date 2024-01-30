@@ -13,22 +13,22 @@ Este projeto é uma aplicação simples de gerenciamento de tarefas desenvolvida
 
 ### `domain`
 
-- **BaseTask:** Classe base que define atributos comuns a todas as tarefas.
-- **PersonalTask:** Extensão de `BaseTask` para representar tarefas pessoais, incluindo atributos específicos de tarefas pessoais.
-- **StudyTask:** Extensão de `BaseTask` para representar tarefas de estudo, incluindo atributos específicos de tarefas de estudo.
-- **WorkTask:** Extensão de `BaseTask` para representar tarefas de trabalho, incluindo atributos específicos de tarefas de trabalho.
+- `BaseTask`:Classe base que define atributos comuns a todas as tarefas.
+- `PersonalTask`: Extensão de `BaseTask` para representar tarefas pessoais, incluindo atributos específicos de tarefas pessoais.
+- `StudyTask`: Extensão de `BaseTask` para representar tarefas de estudo, incluindo atributos específicos de tarefas de estudo.
+- `WorkTask`: Extensão de `BaseTask` para representar tarefas de trabalho, incluindo atributos específicos de tarefas de trabalho.
 
 ### `repository`
 
-- **TasksRepository:** Repositório principal para armazenar e gerenciar todas as operações de tarefas.
+- `TasksRepository`: Repositório principal para armazenar e gerenciar todas as operações de tarefas.
 
 ### `service`
 
-- **TasksService:** Serviço que lida com a lógica de negócios relacionada às tarefas.
+- `TasksService`: Serviço que lida com a lógica de negócios relacionada às tarefas.
 
 ### `Main`
 
-- **Main:** Ponto de entrada da aplicação. Permite ao usuário escolher o tipo de tarefa e interagir com as operações correspondentes através do console.
+- `Main`: Ponto de entrada da aplicação. Permite ao usuário escolher o tipo de tarefa e interagir com as operações correspondentes através do console.
 
 ## Como Executar
 
