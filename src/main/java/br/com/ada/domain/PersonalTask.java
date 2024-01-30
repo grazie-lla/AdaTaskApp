@@ -22,8 +22,8 @@ public class PersonalTask<T> extends BaseTask<T> {
     public String toString() {
         return "Título: " + title +
                 "\nDescrição: " + description +
+                "\nPrioridade:"+ priority +
                 "\nPrazo máximo: " + deadline +
-                "\nID: " + id +
-                "\nPrioridade:"+ priority;
+                "\nID: " + id;
     }
 }
