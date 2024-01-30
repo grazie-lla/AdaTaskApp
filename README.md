@@ -88,7 +88,8 @@ Este projeto é uma aplicação simples de gerenciamento de tarefas desenvolvida
 - Exibe as informações de cada tarefa.
 
 ### Retornar ao Menu principal:
-- Usuário escolhe retornar ao menu principal e pode escolher outros tipos de tarefas.
+- Usuário escolhe retornar ao menu principal.
+- Exibe novamente o Menu inicial e permite que o usuário escolha um novo tipo de tarefa.
 
 ### Sair
 - Usuário escolhe Sair.
