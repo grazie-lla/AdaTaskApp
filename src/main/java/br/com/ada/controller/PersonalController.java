@@ -71,6 +71,7 @@ public class PersonalController {
         System.out.println("Tarefa criada com sucesso!");
     }
     private void editTask(Scanner scanner) {
+        scanner = new Scanner(System.in);
         System.out.println("Digite o ID da tarefa que deseja editar:");
         Long id = null;
         while (id == null) {
@@ -96,8 +97,12 @@ public class PersonalController {
         task.setDescription(scanner.next());
         scanner.nextLine();
 
-        System.out.println("Digite a nova data de vencimento da tarefa:");
+        System.out.println("Digite a nova data final da tarefa:");
         task.setDeadline(scanner.next());
+        scanner.nextLine();
+
+        System.out.println("Digite a prioridade tarefa:");
+        task.setPriority(scanner.next());
         scanner.nextLine();
 
         service.editTask(task);
@@ -106,6 +111,7 @@ public class PersonalController {
     }
 
     private void deleteTask(Scanner scanner) {
+        scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Digite o ID da tarefa que deseja excluir:");
             String input = scanner.nextLine();
